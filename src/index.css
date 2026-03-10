@@ -205,6 +205,17 @@ body {
     font-size: 2.4rem;
   }
 }
+.list-heading-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn__clear {
+  font-size: 1.4rem;
+  padding: 0.4rem 0.8rem;
+  color: #ca3c3c;
+  border-color: #ca3c3c;
+}
 /* End general app styles */
 /* Todo item styles */
 .todo {

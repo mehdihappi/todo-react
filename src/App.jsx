@@ -83,6 +83,13 @@ function App(props) {
     setTasks([...tasks, newTask]);
   }
 
+  function clearCompleted() {
+    const activeTasks = tasks.filter((task) => !task.completed);
+    setTasks(activeTasks);
+  }
+
+  const completedCount = tasks.filter((task) => task.completed).length;
+
   const tasksNoun = taskList.length !== 1 ? "tasks" : "task";
   const headingText = `${taskList.length} ${tasksNoun} remaining`;
 
@@ -100,9 +107,20 @@ function App(props) {
       <h1>TodoMatic</h1>
       <Form addTask={addTask} />
       <div className="filters btn-group stack-exception">{filterList}</div>
-      <h2 id="list-heading" tabIndex="-1" ref={listHeadingRef}>
-        {headingText}
-      </h2>
+      <div className="list-heading-group">
+        <h2 id="list-heading" tabIndex="-1" ref={listHeadingRef}>
+          {headingText}
+        </h2>
+        {completedCount > 0 && (
+          <button
+            type="button"
+            className="btn btn__clear"
+            onClick={clearCompleted}
+          >
+            Clear completed
+          </button>
+        )}
+      </div>
       <ul
         aria-labelledby="list-heading"
         className="todo-list stack-large stack-exception"
