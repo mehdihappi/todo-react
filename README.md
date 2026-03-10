@@ -6,7 +6,7 @@ Sample todo app built with the React/ReactDOM framework. For the accompanying do
 
 For the live version, see https://mdn.github.io/todo-react/.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is built with [Vite](https://vitejs.dev/).
 
 ## Getting started
 
@@ -14,25 +14,16 @@ To get this app running locally, you'll need to have [Node.js](https://nodejs.or
 In the project directory, you can run:
 
 ```bash
-yarn && yarn start
+yarn && yarn dev
 ```
 
 More information about the available commands can be found in the [Contributing](CONTRIBUTING.md) guide.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To learn React, check out the [React documentation](https://react.dev/).
 
-The following sections are recommended:
-
-- [Code Splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-- [Analyzing the Bundle Size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-- [Making a Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-- [Advanced Configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-- [Deployment](https://facebook.github.io/create-react-app/docs/deployment)
-- [npm run build fails to minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn more about Vite, check out the [Vite documentation](https://vitejs.dev/guide/).
 
 ## Contributing
 
