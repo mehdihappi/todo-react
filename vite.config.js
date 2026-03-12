@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: "/todo-react/",
   test: {
-    environment: 'jsdom',
-    setupFiles: './src/test/setup.js',
+    environment: "jsdom",
+    setupFiles: "./src/test/setup.js",
   },
 })
